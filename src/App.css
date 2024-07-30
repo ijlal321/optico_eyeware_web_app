@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,500,600,700,400i,500i,600i,700i&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap'); 
+ 
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body { 
+    font-family: 'Cabin',sans-serif; 
+    font: 'Cabin',sans-serif;
+    font-weight: 400; 
+    font-size: 1rem; 
+    line-height: var(--ast-body-line-height,1.65em);
+} 
+html { 
+    font-family: 'Cabin',sans-serif; 
+    font: 'Cabin',sans-serif;
+    border: 0; 
+    font-size: 100%; 
+    font-style: inherit; 
+    font-weight: inherit; 
+    margin: 0; 
+    outline: 0; 
+    padding: 0; 
+    vertical-align: baseline;
+} 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+html { 
+    font-size: 106.25%;
+} 
