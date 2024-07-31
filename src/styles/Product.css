@@ -9,17 +9,14 @@
     margin-bottom: 2.5em;
 }
 
-
-
-
-.img-section {
+.Product .img-section {
     position: relative;
     height: 270px; /* Set the height to 270px */
     overflow: hidden; /* Hide overflow to crop */
     margin-bottom: 0.8rem;
 }
 
-.img-section .product-link img {
+.Product .img-section .product-link img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Cover the container, maintaining aspect ratio */
@@ -27,7 +24,7 @@
 }
 
 /* Add to Cart Button */
-.add-to-cart-button {
+.Product .add-to-cart-button {
     position: absolute;
     top: 1em;
     right: 1em;
@@ -41,13 +38,13 @@
 }
 
 /* Show the button when hovering over the .img-section */
-.img-section:hover .add-to-cart-button {
+.Product .img-section:hover .add-to-cart-button {
     opacity: 1;
     visibility: visible;
 }
 
 /* Tooltip */
-.add-to-cart-button .tooltip {
+.Product .add-to-cart-button .tooltip {
     white-space: nowrap; /* Prevent text from wrapping to the next line */
     background-color: #000;
     color: #fff;
@@ -65,13 +62,13 @@
 }
 
 /* Show tooltip on hover */
-.add-to-cart-button:hover .tooltip {
+.Product .add-to-cart-button:hover .tooltip {
     opacity: 1;
     visibility: visible;
 }
 
 /* Icon */
-.add-to-cart-button .icon {
+.Product .add-to-cart-button .icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -85,18 +82,18 @@
 }
 
 /* Adjust SVG size */
-.add-to-cart-button .icon svg {
+.Product .add-to-cart-button .icon svg {
     width: 1em; /* Smaller width for the SVG */
     height: 1em; /* Smaller height for the SVG */
 }
 
 /* Show full opacity on hover */
-.add-to-cart-button:hover .icon {
+.Product .add-to-cart-button:hover .icon {
     opacity: 1;
 }
 
 /* Triangle pointing to the right */
-.add-to-cart-button:hover .tooltip::after {
+.Product .add-to-cart-button:hover .tooltip::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -109,39 +106,31 @@
     transform: translateY(-50%);
 }
 
-
-
-
-
-
-
-
-
-
 /* Product Summary */
-.summary-wrap {
+.Product .summary-wrap {
     margin-top: 1em;
 }
 
-.category {
+.Product .category {
     font-size: 0.85em;
     color: #777;
 }
 
-a{
+.Product a {
     text-decoration: none;
 }
-.title {
+
+.Product .title {
     font-weight: 500;
     font-size: 1em; /* Adjusted for better fit */
     color: black;
     margin-bottom: 0.5em;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-bottom: 0.5rem;
     margin-top: 0;
 }
 
-.price {
+.Product .price {
     color: #565656;
     font-weight: 700;
     font-size: 1rem; /* Adjusted for better fit */

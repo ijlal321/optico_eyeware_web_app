@@ -8,7 +8,7 @@ const TopContent = () => {
         <div class="home-content">
 
 
-            <h5>A Whole New Look</h5>
+            <h5 className='blue-heading'>A Whole New Look</h5>
             <h1>Beauty Pronounced</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.

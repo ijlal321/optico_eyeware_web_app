@@ -1,0 +1,27 @@
+.banner-container {
+    margin: 0 auto;
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+}
+
+.banner {
+    display: flex;
+    /* justify-content: space-evenly; */
+    transition: transform 1s ease-in-out;
+}
+
+.banner-item {
+    /* flex: 0 0 33% ; */
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    /* border-right: 1px solid #ccc; */
+}
+
+.banner-item img {
+    max-width: 100%;
+    height: auto;
+}

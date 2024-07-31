@@ -3,6 +3,7 @@ import "../../styles/Home.css";
 import HomeProducts from './HomeProducts';
 import TopContent from './TopContent';
 import HighlightedFeatures from './HighlightedFeatures';
+import LogoSection from './LogoSection';
 
 function Home() {
     return (
@@ -10,6 +11,7 @@ function Home() {
             <TopContent />
             <HomeProducts />
             <HighlightedFeatures />
+            <LogoSection />
         </div>
     )
 }
