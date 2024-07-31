@@ -1,0 +1,28 @@
+
+.blue-button {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: #269fb7; /* Button color */
+    border-radius: 0px;
+    outline: solid;
+    outline-width: 2px;
+    outline-color: white;
+    text-align: center;
+    width: 120px;
+    height: 25px;
+    /* transition: background-color 0.3s ease, color 0.3s ease;  */
+    transition: all .2s linear;
+    letter-spacing: 4px;   /* Adjust the space between words */
+    color: white;
+}
+
+.blue-button:hover {
+    background-color: #323232;
+    /* color: #7cade2; */
+}

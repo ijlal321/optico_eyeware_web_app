@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/TopContent.css';
+import WhiteButton from '../Buttons/WhiteButton';
 
 const TopContent = () => {
     return (
@@ -13,9 +14,7 @@ const TopContent = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
             </p>
 
-            <a href="./" class="button">
-                VIEW MORE
-            </a>
+            <WhiteButton />
         </div>
     </div>
     );

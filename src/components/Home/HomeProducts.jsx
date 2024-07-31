@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../styles/HomeProducts.css';
 import Product from '../Product';
+import BlueButton from '../Buttons/BlueButton';
 
 const HomeProducts = () => {
     return (
@@ -10,7 +11,13 @@ const HomeProducts = () => {
                 <h2>Add a Flavor to Being a Girl</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur.</p>
             </div>
-            <Product />
+            <div className='products-area'>
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+            </div>
         </div>
     );
 }

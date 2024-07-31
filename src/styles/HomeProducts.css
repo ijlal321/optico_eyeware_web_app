@@ -1,5 +1,5 @@
 .home-products {
-    padding: 100px 30px;
+    padding: 100px 0px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -30,4 +30,14 @@
 /* Styling for p element within text-area */
 .home-products .text-area p {
     color: #565656;
+}
+
+.products-area{
+    padding-top: 50px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }

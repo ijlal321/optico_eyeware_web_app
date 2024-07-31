@@ -1,16 +1,19 @@
 .Product {
     display: flex;
     flex-direction: column;
-    width: 270px;
+    width: 23%;
+    max-width: 270px;
     padding: 0;
     position: relative;
     text-align: left;
     margin-bottom: 2.5em;
 }
 
+
+
+
 .img-section {
     position: relative;
-    width: 270px; /* Set the width to 270px */
     height: 270px; /* Set the height to 270px */
     overflow: hidden; /* Hide overflow to crop */
     margin-bottom: 0.8rem;
@@ -30,41 +33,50 @@
     right: 1em;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.2s, visibility 0.2s;
+    transition: opacity linear 0.2s, visibility 0.2s;
     cursor: pointer;
+    display: flex; /* Ensure the button respects the alignment */
+    align-items: center; /* Center the contents vertically */
+    justify-content: center; /* Center the contents horizontally */
 }
 
+/* Show the button when hovering over the .img-section */
 .img-section:hover .add-to-cart-button {
     opacity: 1;
     visibility: visible;
 }
 
+/* Tooltip */
 .add-to-cart-button .tooltip {
-    width: 100%;
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
     background-color: #000;
     color: #fff;
-    padding: 0.7em 0.9em;
+    padding: 0.15em 0.6em;
     border-radius: 3px;
     font-size: 0.8em;
     position: absolute;
-    right: 100%;
+    right: 110%;
     top: auto;
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.2s, visibility 0.2s;
+    /* Optional: Add a bit of space to the right if needed */
+    margin-right: 0.5em;
 }
 
+/* Show tooltip on hover */
 .add-to-cart-button:hover .tooltip {
     opacity: 1;
     visibility: visible;
 }
 
+/* Icon */
 .add-to-cart-button .icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 2em;
-    height: 2em;
+    width: 1.8em; /* Smaller width for the icon */
+    height: 1.8em; /* Smaller height for the icon */
     background: #fff;
     border-radius: 50%;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
@@ -72,9 +84,39 @@
     transition: opacity 0.2s;
 }
 
+/* Adjust SVG size */
+.add-to-cart-button .icon svg {
+    width: 1em; /* Smaller width for the SVG */
+    height: 1em; /* Smaller height for the SVG */
+}
+
+/* Show full opacity on hover */
 .add-to-cart-button:hover .icon {
     opacity: 1;
 }
+
+/* Triangle pointing to the right */
+.add-to-cart-button:hover .tooltip::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -7.5px; /* Position the triangle to the right of the tooltip */
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #000; /* Match the color with your tooltip background */
+    transform: translateY(-50%);
+}
+
+
+
+
+
+
+
+
+
 
 /* Product Summary */
 .summary-wrap {
